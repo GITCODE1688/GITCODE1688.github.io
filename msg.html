@@ -9,7 +9,16 @@
     <h1>對象：xxx</h1>
     <p></p>
     <h1>系統：<font color="red">ICDropship </font></h1>  
-    <h1>訊息：<font color="red">可以了</font></h1>   
+    <h1 >訊息：<font color="red" id="blink">可以了</font></h1>   
+    <h1><font color="lightcyan">#2322</font></h1>   
     
+    <script>
+        window.addEventListener("load", function() {
+          var b = document.getElementById('blink');
+          setInterval(function() {
+              b.style.display = (b.style.display == 'none' ? '' : 'none');
+          }, 500);
+      }, false);
+        </script>
 </body>
 </html>
