@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
@@ -10,6 +10,7 @@
     <p></p>
     <h1>系統：<font color="red">ICDropship </font></h1>  
     <h1 >訊息：<font color="red" id="blink">可以了</font></h1>   
+    <p id="date"></p>
     <h1><font color="lightcyan">#2322</font></h1>   
     
     <script>
@@ -19,6 +20,8 @@
               b.style.display = (b.style.display == 'none' ? '' : 'none');
           }, 500);
       }, false);
-        </script>
+
+        document.getElementById("date").innerHTML = new Date().toLocaleDateString()  + '   '+ new Date().getHours() + ':' + new Date().getMinutes()
+    </script>
 </body>
 </html>
