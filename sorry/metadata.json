@@ -1,5 +1,0 @@
-{
-  "name": "時間顯示與文字輸入應用",
-  "description": "一個簡單的 React 應用程式，用於顯示目前時間、允許使用者輸入文字，並在點擊按鈕後顯示該文字。",
-  "requestFramePermissions": []
-}
