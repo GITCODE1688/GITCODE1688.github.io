@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>this page on github</title>
+    
+</head>
+<body>
+    <p>javascript test: Chris</p>
+    monk first github page
+	
+    <script>
+
+        const para = document.querySelector('p');
+        para.addEventListener('click', updateName);
+        
+
+
+        function updateName() {
+            const name = prompt('Enter a new name');
+            para.textContent = `Player 1: ${name}`;
+        }
+    </script>
+</body>
+</html>
